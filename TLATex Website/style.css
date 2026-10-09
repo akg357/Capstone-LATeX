@@ -1,0 +1,657 @@
+/* this keeps padding and borders inside the element's width */
+*
+{
+    box-sizing: border-box;
+}
+
+
+/* this will be able to  set the main colors and font */
+body
+{
+    margin: 0;
+
+    background-color: #f7f7f7;
+    color: #0c0b0b;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    line-height: 1.6;
+}
+
+
+a
+ {
+    color: #b60000;
+    overflow-wrap: anywhere;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+
+/* this makes links easier to see when using a keyboard on mobile devices  */
+a:focus-visible
+{
+    outline: 3px solid #222;
+
+    outline-offset: 4px;
+}
+
+
+/* this link stays hidden until a keyboard user selects it */
+.skip-link
+{
+    position: absolute;
+
+    top: -100px;
+    left: 12px;
+
+    padding: 10px 16px;
+    background-color: white;
+
+
+    z-index: 2;
+}
+
+
+.skip-link:focus
+{
+
+    top: 13px;
+}
+
+
+/* this styles the header at the top of each page */
+header
+{
+    background-color: white;
+
+    padding: 25px max(24px, calc((100% - 1100px) / 2));
+    border-bottom: 5px solid #e60000;
+}
+
+
+/* this keeps the logo beside the team name */
+.brand
+{
+    display: inline-flex;
+
+
+
+    align-items: center;
+
+
+    gap: 15px;
+
+    color: #222;
+    text-decoration: none;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.brand img
+ {
+    border-radius: 10px;
+}
+
+.brand small
+{
+    display: block;
+
+    font-size: 13px;
+
+    
+    font-weight: normal;
+
+
+    color: #7e7b7b;
+}
+
+
+/* these links work like tabs for the different pages */
+nav
+{
+    display: flex;
+
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+    margin-top: 22px;
+}
+
+nav a
+{
+    padding: 9px 13px;
+
+    border-radius: 5px;
+    color: #444;
+
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover
+ {
+    background-color: #f0f0f0;
+}
+
+
+/* this highlights whichever page is currently open */
+nav a[aria-current="page"]
+{
+    background-color: #c60000;
+    color: white;
+}
+
+
+/* this centers the page content and adds space around it */
+main
+{
+    max-width: 1100px;
+
+    margin: 36px auto 50px;
+
+
+    padding: 0 24px;
+}
+
+
+/* this styles the title at the top of each page */
+.page-title
+{
+    margin-bottom: 28px;
+}
+
+h1
+{
+    margin: 0;
+
+    font-size: 36px;
+    line-height: 1.25;
+
+    overflow-wrap: anywhere;
+}
+
+.page-title p
+ {
+
+
+    margin: 10px 0 0;
+    color: #555;
+}
+
+
+/* this sets the spacing for section headings and paragraphs */
+h2
+{
+    margin: 0 0 12px;
+
+    font-size: 23px;
+    line-height: 1.35;
+}
+
+h3
+{
+    margin: 22px 0 8px;
+
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+p
+ {
+    margin: 0 0 15px;
+}
+
+p:last-child
+{
+    margin-bottom: 0;
+}
+
+
+/* this styles the large introduction on the home page */
+.intro
+{
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 35px;
+
+    padding: 35px;
+
+    margin-bottom: 24px;
+
+    background-color: white;
+
+    border-top: 4px solid #e60000;
+
+    border-radius: 8px;
+}
+
+.intro div
+ {
+    max-width: 700px;
+    min-width: 0;
+}
+
+.intro img
+{
+    flex-shrink: 0;
+    border-radius: 14px;
+}
+
+.subtitle
+{
+    margin: 14px 0;
+
+    font-size: 23px;
+    color: #555;
+}
+
+
+/* this adds small red labels above important information */
+.label
+{
+    color: #b60000;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* this styles the main link on the home page */
+.button
+{
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    margin-top: 8px;
+
+    background-color: #c60000;
+
+
+    color: white;
+
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover
+ {
+    background-color: #a60000;
+}
+
+
+/* these white boxes separate the page into clear sections */
+.card
+{
+    padding: 28px;
+    margin-bottom: 22px;
+
+    background-color: rgb(226, 222, 222);
+
+    border: 1px solid #efecec;
+
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+
+    min-width: 0;
+
+
+    overflow-wrap: anywhere;
+}
+
+.card h2
+
+
+{
+
+    color: #b60000;
+}
+
+
+/* this places the sponsor and mentor beside each other */
+
+
+
+.two-columns
+{
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+
+    gap: 22px;
+}
+
+
+/* this leaves space between a person's photo and description */
+.person-card
+{
+    display: flex;
+
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+
+    gap: 20px;
+}
+
+
+/* this keeps the team member photos beside their descriptions */
+.member
+{
+    display: flex;
+    align-items: flex-start;
+
+    gap: 28px;
+}
+
+.member > div
+ {
+    min-width: 0;
+}
+
+
+/* this keeps the headshots the same size */
+.headshot
+{
+    display: block;
+
+    width: 160px;
+    height: 190px;
+
+    object-fit: cover;
+    object-position: center top;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+    background-color: #eee;
+}
+
+
+/* this styles the team member's project role */
+.role
+{
+    color: #555;
+    font-weight: bold;
+}
+
+
+/* this adds a little space above a paragraph */
+.spaced
+ {
+    margin-top: 15px;
+}
+
+
+/* this makes unfinished information easy to spot */
+.placeholder
+{
+    color: #555;
+
+    padding: 14px;
+    background-color: #f7f7f7;
+
+    border-left: 3px solid #ccc;
+}
+
+
+/* this adds room between requirements and other list items */
+.feature-list
+{
+    margin: 16px 0;
+    padding-left: 24px;
+}
+
+.feature-list li
+ {
+    margin-bottom: 14px;
+}
+
+.feature-list li:last-child
+{
+    margin-bottom: 0;
+}
+
+
+/* this makes the development steps easy to follow */
+.workflow
+{
+    margin: 20px 0 0;
+    padding-left: 28px;
+}
+
+.workflow li
+{
+    padding-left: 8px;
+    margin-bottom: 22px;
+}
+
+.workflow li::marker
+ {
+    color: #b60000;
+    font-weight: bold;
+}
+
+.workflow strong
+{
+    font-size: 18px;
+}
+
+.workflow p
+ {
+    margin: 6px 0 0;
+}
+
+
+/* this lets the table scroll if the screen gets too narrow */
+.table-wrap
+{
+    overflow-x: auto;
+}
+
+table
+{
+    width: 100%;
+
+    border-collapse: collapse;
+    text-align: left;
+}
+
+caption
+{
+    margin-bottom: 15px;
+
+    text-align: left;
+    color: #555;
+}
+
+th,
+td
+{
+    padding: 14px;
+
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+
+thead
+ {
+    background-color: #f5f5f5;
+}
+
+tbody th
+{
+    width: 28%;
+}
+
+
+/* this gives code filenames a small background */
+code
+{
+    padding: 2px 5px;
+
+    background-color: #f1f1f1;
+    border-radius: 3px;
+
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.95em;
+}
+
+
+/* this separates each document entry */
+.document
+{
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.document:first-of-type
+ {
+    padding-top: 0;
+}
+
+.document:last-child
+{
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.document h3
+ {
+    margin-top: 0;
+}
+
+
+/* this styles the contact area at the bottom */
+footer
+{
+    max-width: 1052px;
+
+    margin: 0 auto 28px;
+    padding: 25px;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    background-color: white;
+
+    border-left: 4px solid #e60000;
+    border-radius: 6px;
+
+    color: #555;
+}
+
+footer h2
+{
+    color: #b60000;
+    font-size: 18px;
+}
+
+
+/* this adjusts the website for tablets and smaller screens */
+@media (max-width: 760px)
+{
+
+    h1
+    {
+        font-size: 29px;
+    }
+
+    .two-columns
+     {
+        grid-template-columns: 1fr;
+    }
+
+    .intro
+    {
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .intro img
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer
+     {
+        flex-direction: column;
+        margin: 0 24px 24px;
+    }
+
+}
+
+
+/* this stacks the photos and text on phones */
+@media (max-width: 520px)
+{
+
+    header
+    {
+        padding: 20px 16px;
+    }
+
+    main
+     {
+        margin-top: 26px;
+        padding: 0 16px;
+    }
+
+    .brand
+    {
+        font-size: 21px;
+    }
+
+    nav a
+     {
+        padding: 9px 10px;
+    }
+
+    .intro,
+    .member
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card
+     {
+        padding: 22px;
+    }
+
+    .subtitle
+    {
+        font-size: 20px;
+    }
+
+    th,
+    td
+     {
+        padding: 10px;
+    }
+
+    footer
+    {
+        margin: 0 16px 24px;
+    }
+
+}

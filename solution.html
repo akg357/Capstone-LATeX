@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- this sets up the page and connects our stylesheet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="How the planned TLATeX improvements fit into the TLA+ document export process.">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Solution | Team TLATeX</title>
+
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- this shows our team branding -->
+    <header>
+
+        <a class="brand" href="index.html">
+            <img src="TlaTEX%20(80%20x%2080%20px)-3.png" alt="" width="64" height="64">
+
+            <span>
+                Team TLATeX
+                <small>NAU Capstone · 2026–2027</small>
+            </span>
+        </a>
+
+        <!-- these links open the website sections -->
+        <nav aria-label="Main navigation">
+
+            <a href="index.html">Home</a>
+                <a href="team.html">Team</a>
+            <a href="project.html">Project</a>
+                <a href="requirements.html">Requirements</a>
+            <a href="solution.html" aria-current="page">Solution</a>
+                <a href="technologies.html">Technologies</a>
+            <a href="schedule.html">Schedule</a>
+                <a href="resources.html">Code &amp; Documents</a>
+
+        </nav>
+
+    </header>
+
+
+    <main id="main">
+
+        <!-- this introduces the solution page -->
+        <div class="page-title">
+
+            <h1>Planned Solution</h1>
+            <p>Updating the existing tool and the documents it produces.</p>
+
+        </div>
+
+
+        <!-- this describes the product we plan to deliver -->
+        <section class="card">
+
+            <h2>Product Overview</h2>
+
+            <p>
+                Our product will be an updated version of the TLATeX
+                document generation tool and its styling.
+                We are building on the existing TLA+ tools rather
+                than creating a separate specification language.
+            </p>
+
+            <p>
+                The goal is to let users turn their TLA+
+                specifications into documents with more useful
+                formatting options.
+            </p>
+
+        </section>
+
+
+        <!-- this shows the document process without needing an image -->
+        <section class="card">
+
+            <h2>From Specification to PDF</h2>
+
+            <ol class="workflow">
+
+                <li>
+                    <strong>TLA+ specification</strong>
+                    <p>
+                        The user writes a specification describing
+                        how a system should behave.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>TLATeX</strong>
+                    <p>
+                        The typesetter converts the specification
+                        into a TeX document.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>Document styling</strong>
+                    <p>
+                        LaTeX styling controls how the specification,
+                        symbols, fonts, and other content appear.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>LuaLaTeX compilation</strong>
+                    <p>
+                        The generated document is compiled into a PDF
+                        that can be read and shared.
+                    </p>
+                </li>
+
+            </ol>
+
+        </section>
+
+
+        <!-- this explains the main parts of our planned changes -->
+        <section class="card">
+
+            <h2>Where Our Changes Fit</h2>
+
+            <h3>The Java typesetter</h3>
+
+            <p>
+                We will work with the TLATeX code in the TLA+ tools
+                repository to support the requested document features.
+            </p>
+
+            <h3>The LaTeX style file</h3>
+
+            <p>
+                Changes to <code>tlatex.sty</code> will help control
+                the appearance of the generated documents, including
+                mathematical symbols and formatting.
+            </p>
+
+            <h3>The VS Code extension</h3>
+
+            <p>
+                We will work with the JAVA code in the
+                TLA+ extension where changes are needed to support
+                the updated export process.
+            </p>
+
+        </section>
+
+
+        <!-- this leaves room for the final architecture and demos -->
+        <section class="card">
+
+            <h2>Architecture and Demonstrations</h2>
+
+            <p>
+                The steps above show the basic document generation
+                process. We will add a more detailed architecture
+                diagram as the implementation is developed.
+            </p>
+
+            
+
+        </section>
+
+    </main>
+
+
+    <!-- this shows the project contact -->
+    <footer>
+
+        <div>
+            <h2>Contact Us</h2>
+
+            <p>
+                Project questions:
+                <a href="mailto:tdc266@nau.edu">tdc266@nau.edu</a>
+            </p>
+        </div>
+
+        <p>
+            Northern Arizona University<br>
+            Team TLATeX · 2026–2027
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
